@@ -1,12 +1,10 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 
 import { useClashConfig } from '$src/store/configs';
 
 export function BackendBeacon() {
   return (
-    <Suspense fallback={null}>
-      <BackendBeaconCore />
-    </Suspense>
+    <BackendBeaconCore />
   );
 }
 

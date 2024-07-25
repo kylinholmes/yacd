@@ -62,10 +62,10 @@ function RouteInnerApp() {
 function SideBarApp() {
   return (
     <div className={s0.app}>
-      <BackendBeacon />
       <SideBar />
       <div className={s0.content}>
         <Suspense fallback={<Loading2 />}>
+          <BackendBeacon />
           <RouteInnerApp />
         </Suspense>
       </div>
